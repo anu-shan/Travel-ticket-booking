@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking - TravelGo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="logo">(n TravelGo</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="search.html">Search</a>
+<a href="booking.html">Booking</a>
+<a href="ticket.html">My Ticket</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<section class="form-container">
+<h1>Passenger Details</h1>
+<form onsubmit="confirmBooking(event)">
+<label>Full Name</label>
+<input type="text" id="name" required>
+<label>Email</label>
+<input type="email" id="email" required>
+<label>Phone Number</label>
+<input type="tel" id="phone" required>
+<label>Travel Date</label>
+<input type="date" required>
+<label>Select Seat</label>
+<select id="seat" required>
+<option value="">Select Seat</option>
+<option>1A</option><option>1B</option>
+<option>2A</option><option>2B</option>
+<option>3A</option><option>3B</option>
+</select>
+<button type="submit">Confirm Booking</button>
+</form>
+</section>
+<footer><p>© 2026 TravelGo</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>

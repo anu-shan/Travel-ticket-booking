@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelGo - Booking</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<div class="logo"><h1>TravelGo</h1></div>
+<nav>
+<a href="index.html">Home</a>
+<a href="booking.html">Booking</a>
+<a href="ticket.html">My Ticket</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+<section class="page-banner">
+<h2>Complete Your Booking</h2>
+<p>Enter your passenger details to confirm your journey.</p>
+</section>
+<section class="content-card">
+<h2>Journey Summary</h2>
+<div id="journeySummary" class="summary-box">
+Loading journey details...
+</div>
+<h2>Passenger Details</h2>
+<form id="bookingForm" class="booking-form">
+<div class="form-group">
+<label for="fullName">Full Name</label>
+<input type="text" id="fullName" placeholder="Enter your full name" required>
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Enter your email" required>
+</div>
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" placeholder="Enter your phone number" required>
+</div>
+<div class="form-group">
+<label for="passengerCount">Number of Passengers</label>
+<input type="number" id="passengerCount" min="1" max="5" value="1" required>
+</div>
+<button type="submit">Confirm Booking</button>
+</form>
+</section>
+<footer><p>© 2026 TravelGo. All rights reserved.</p></footer>
+<script src="js/booking.js"></script>
+</body>
+</html>

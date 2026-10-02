@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TravelGo - Home & Search</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">
+            <h1>TravelGo</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html">Booking</a>
+            <a href="ticket.html">My Ticket</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero / Welcome Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Your Journey Starts Here</h2>
+
+            <p>
+                Welcome to TravelGo, your simple and reliable
+                online travel ticket booking platform.
+            </p>
+
+            <p>
+                Search available journeys, choose your preferred
+                travel option and start your journey with ease.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <h2>Search Your Journey</h2>
+
+        <p class="section-description">
+            Enter your travel details to find available journeys.
+        </p>
+
+        <form id="searchForm">
+
+            <div class="form-group">
+
+                <label for="from">From</label>
+
+                <select id="from" name="from" required>
+
+                    <option value="">Select departure</option>
+
+                    <option value="Auckland">Auckland</option>
+                    <option value="Wellington">Wellington</option>
+                    <option value="Hamilton">Hamilton</option>
+                    <option value="Rotorua">Rotorua</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="to">To</label>
+
+                <select id="to" name="to" required>
+
+                    <option value="">Select destination</option>
+
+                    <option value="Auckland">Auckland</option>
+                    <option value="Wellington">Wellington</option>
+                    <option value="Hamilton">Hamilton</option>
+                    <option value="Rotorua">Rotorua</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="travelDate">
+                    Travel Date
+                </label>
+
+                <input
+                    type="date"
+                    id="travelDate"
+                    name="travelDate"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="passengers">
+                    Passengers
+                </label>
+
+                <select
+                    id="passengers"
+                    name="passengers"
+                    required
+                >
+
+                    <option value="1">1 Passenger</option>
+                    <option value="2">2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5">5 Passengers</option>
+
+                </select>
+
+            </div>
+
+
+            <button type="submit">
+                Search Tickets
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Search Results -->
+    <section id="results" class="results-section">
+
+        <h2>Available Journeys</h2>
+
+        <div id="journeyList">
+
+            <!-- JavaScript will display results here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- Why Choose TravelGo -->
+    <section class="why-section">
+
+        <h2>Why Choose TravelGo?</h2>
+
+        <div class="features">
+
+            <div class="feature-card">
+                <h3>Easy Booking</h3>
+                <p>
+                    Search and book your journey with a simple
+                    and user-friendly process.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Reliable Travel</h3>
+                <p>
+                    Find convenient travel options for your
+                    planned journey.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Affordable Options</h3>
+                <p>
+                    Compare available journeys and choose an
+                    option that suits your budget.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Simple Experience</h3>
+                <p>
+                    Manage your booking journey from search
+                    to ticket confirmation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Popular Destinations -->
+    <section class="destinations-section">
+
+        <h2>Popular Destinations</h2>
+
+        <div class="destinations">
+
+            <div class="destination-card">
+                <h3>Auckland</h3>
+                <p>Explore New Zealand's largest city.</p>
+            </div>
+
+            <div class="destination-card">
+                <h3>Wellington</h3>
+                <p>Discover the capital city and its attractions.</p>
+            </div>
+
+            <div class="destination-card">
+                <h3>Hamilton</h3>
+                <p>Enjoy a relaxing journey through Waikato.</p>
+            </div>
+
+            <div class="destination-card">
+                <h3>Rotorua</h3>
+                <p>Experience nature, culture and adventure.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 TravelGo. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/home-search.js"></script>
+
+</body>
+
+</html>

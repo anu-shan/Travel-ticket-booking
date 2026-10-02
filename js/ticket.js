@@ -1,4 +1,3 @@
-
 // TravelGo - My Ticket Module
 // Reads bookingData created by the Booking page.
 
@@ -7,7 +6,7 @@ const ticketContainer = document.getElementById("ticketContainer");
 const booking = JSON.parse(localStorage.getItem("bookingData"));
 
 if (!booking) {
-    ticketContainer.innerHTML = 
+    ticketContainer.innerHTML = `
         <div class="empty-state">
             <h3>No Booking Found</h3>
             <p>Please search for a journey and complete a booking first.</p>
@@ -16,11 +15,11 @@ if (!booking) {
                 Search Journeys
             </a>
         </div>
-    ;
+    `;
 } else {
     const journey = booking.journey;
 
-    ticketContainer.innerHTML = 
+    ticketContainer.innerHTML = `
         <div class="ticket-card">
             <div class="ticket-header">
                 <h2>TravelGo Ticket</h2>
@@ -84,17 +83,17 @@ if (!booking) {
                 </a>
             </div>
         </div>
-    ;
+    `;
 
     document.getElementById("cancelButton")
         .addEventListener("click", function () {
-            if (
-                confirm("Are you sure you want to cancel this booking?")
-            ) {
+
+            if (confirm("Are you sure you want to cancel this booking?")) {
+
                 localStorage.removeItem("bookingData");
                 localStorage.removeItem("selectedJourney");
 
-                ticketContainer.innerHTML = 
+                ticketContainer.innerHTML = `
                     <div class="empty-state">
                         <h3>Booking Cancelled</h3>
                         <p>Your demo booking has been cancelled.</p>
@@ -103,7 +102,7 @@ if (!booking) {
                             Search Again
                         </a>
                     </div>
-                ;
+                `;
             }
         });
 }
